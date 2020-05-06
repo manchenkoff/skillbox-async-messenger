@@ -9,3 +9,10 @@
 - найти размер оплаты в руб (по кол-во дней)
 - найти размер налога 13% в руб (по кол-во дней)
 """
+hour_cost = int(input("Укажите стоимость часа >> "))
+day_quantity = int(input("Укажите кол-во дней >> "))
+
+total = (hour_cost * 8) * day_quantity
+final = total - (total * .13)
+
+print(final)
