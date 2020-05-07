@@ -51,6 +51,7 @@ class Person:
         print(f"Объект класса Person: {self.first_name} {self.last_name}, age: {self.age}")
 
 
-person1 = Person('John', 'Doe', 43)
+person1 = Person('John', 'Elton', 43)
 
 person1.info()
+
