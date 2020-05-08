@@ -33,8 +33,7 @@ class ClientProtocol(asyncio.Protocol):
         encoded = format_string.encode()
 
         for client in self.server.clients:
-            if client.login != self.login:
-                client.transport.write(encoded)
+            client.transport.write(encoded)
 
     def connection_made(self, transport: transports.Transport):
         self.transport = transport
